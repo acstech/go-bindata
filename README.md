@@ -1,3 +1,11 @@
+## IMPORTANT
+
+This repo is a hard fork of https://github.com/jteeuwen/go-bindata/ due to the disappearance of https://github.com/jteeuwen on GitHub. The account has been reinstated, but it is not the original owner.
+
+The original code is in the [jteeuwen](https://github.com/acstech/go-bindata/tree/jteeuwen) branch. It can be diffed against a Dec 1, 2015 copy of the original repo as a cross-check.
+
+The master branch has been updated to fix import paths.
+
 ## bindata
 
 This package converts any file into managable Go source code. Useful for
@@ -13,7 +21,7 @@ output being generated.
 
 To install the library and command line program, use the following:
 
-	go get -u github.com/jteeuwen/go-bindata/...
+	go get -u github.com/acstech/go-bindata/...
 
 
 ### Usage
@@ -42,7 +50,7 @@ Multiple input directories can be specified if necessary.
 	$ go-bindata dir1/... /path/to/dir2/... dir3
 
 
-The following paragraphs detail some of the command line options which can be 
+The following paragraphs detail some of the command line options which can be
 supplied to `go-bindata`. Refer to the `testdata/out` directory for various
 output examples from the assets in `testdata/in`. Each example uses different
 command line options.
@@ -184,6 +192,5 @@ and must follow the build tags syntax specified by the go tool.
 
 ### Related projects
 
-[go-bindata-assetfs](https://github.com/elazarl/go-bindata-assetfs#readme) - 
+[go-bindata-assetfs](https://github.com/elazarl/go-bindata-assetfs#readme) -
 implements `http.FileSystem` interface. Allows you to serve assets with `net/http`.
-
